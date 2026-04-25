@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanka Bloom | Bespoke Sri Lanka Tours & Journeys</title>
+    <meta name="description" content="Discover curated journeys designed for the soulful traveler. From mist-covered mountains to sun-drenched shores, experience the ultimate Sri Lankan escape with Lanka Bloom.">
+    
+    <!-- Fonts: Playfair Display (Serif) & Outfit (Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- Premium Navigation -->
+    <nav id="main-nav">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-wrapper">
+                    <img src="assets/logo-white-full.png" alt="Lanka Bloom Logo" class="nav-logo logo-light">
+                    <img src="assets/logo-green-full.png" alt="Lanka Bloom Logo" class="nav-logo logo-dark">
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#journeys">Journeys</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-gold">Book Your Journey</a>
+        </div>
+    </nav>
+
+    <!-- Cinematic Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <!-- Images will be cycled here via JS -->
+            <div class="hero-slide active" style="background-image: url('assets/hero-1.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-eyebrow">Sri Lanka: A World in One Island</h2>
+            <h1 class="hero-title">Ayubowan:<br><span>The Ultimate Sri Lankan Escape</span></h1>
+            <p class="hero-subline">From mist-covered mountains to sun-drenched shores, discover curated journeys designed for the soulful traveler.</p>
+            <div class="hero-ctas">
+                <a href="#journeys" class="btn btn-primary">Explore the Island</a>
+                <a href="#contact" class="btn btn-outline">Plan Your Custom Trip</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Discover</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- Founder's Vision (The Heart Behind the Bloom) -->
+    <section class="section vision" id="story">
+        <div class="container-vision">
+            <div class="vision-content" data-gsap="reveal-left">
+                <h3 class="eyebrow">Bespoke Journeys, Locally Rooted</h3>
+                <h2 class="section-title">The Heart Behind <br><span>the Bloom</span></h2>
+                <div class="vision-text">
+                    <p class="body-large">Lanka Bloom was born from a simple belief: that the most beautiful parts of Sri Lanka aren’t found in guidebooks, but in the quiet moments between the landmarks.</p>
+                    <p>With over a decade of experience in the heart of the island’s hospitality and a deep-rooted passion for our heritage, we don't just act as your guides—we are your local curators.</p>
+                    <p>We believe in travel that 'blooms'—expanding your perspective, nourishing your soul, and respecting the delicate balance of our island’s nature. Whether it’s a sunrise meditation overlooking the tea hills or a silent trek through the Sinharaja, we invite you to experience the Sri Lanka we call home.</p>
+                </div>
+            </div>
+            <div class="vision-logo-wrapper" data-gsap="reveal-right">
+                <img src="assets/main-logo.jpg" alt="Lanka Bloom Logo" class="vision-logo" data-gsap="logo-fade">
+                <div class="vision-panorama-mini">
+                    <img src="assets/heritage-lineart.png" alt="Sri Lanka Skyline Panorama">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Why Us (Trust Signals) -->
+    <section class="section trust" id="why-us">
+        <div class="container grid-trust">
+            <div class="trust-lead" data-gsap="reveal-left">
+                <h3 class="label-gold">THE LANKA BLOOM DIFFERENCE</h3>
+                <h2 class="title-white">The Art of <br><span>Island Discovery</span></h2>
+                <div class="trust-narrative">
+                    <p>At Lanka Bloom, we believe Sri Lanka isn’t just a destination to be seen—it is a story to be lived. We bridge the gap between traveler and tradition, connecting you with the hands that harvest our world-renowned tea and the warmth of the smiles that welcome you home. This is more than a tour; it is an invitation into the heart of our island.</p>
+                </div>
+                <a href="#contact" class="btn-gold-link">Plan Your Bespoke Journey →</a>
+            </div>
+
+            <div class="trust-features-grid" data-gsap="reveal-right">
+                <div class="glass-card">
+                    <div class="card-icon">🧭</div>
+                    <h4>Unrivaled Insight</h4>
+                    <p>Explore through the eyes of expert storytellers who call this island home.</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">🪷</div>
+                    <h4>Signature Hospitality</h4>
+                    <p>Experience the legendary warmth of Sri Lankan hosting, where your comfort is our highest honor.</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">🖋️</div>
+                    <h4>Bespoke Itineraries</h4>
+                    <p>A rhythm designed entirely by you. Every moment is tailored to your personal curiosities.</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">🌱</div>
+                    <h4>Conscious Exploration</h4>
+                    <p>Treading lightly through carbon-neutral paths and supporting the communities that sustain us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose Your Path (Tour Categories) -->
+    <section class="section categories" id="journeys">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="eyebrow">Explore Our Collections</h3>
+                <h2 class="section-title">Choose Your Path</h2>
+                <p class="section-desc">From the peaks of the Knuckles Range to the deep blue of the Indian Ocean, find the journey that speaks to your soul.</p>
+            </div>
+
+            <div class="category-grid">
+                <!-- 1. Eco-Trails & Rainforests -->
+                <div class="category-card" data-category="eco">
+                    <div class="card-image" style="background-image: url('assets/cat_eco_rainforest.png');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3>Eco-Trails & Rainforests</h3>
+                        <p>Deep woods & whispered wonders.</p>
+                        <a href="#eco" class="btn-link">Explore Trails</a>
+                    </div>
+                </div>
+
+                <!-- 2. The Cultural Triangle -->
+                <div class="category-card" data-category="cultural">
+                    <div class="card-image" style="background-image: url('assets/cat_culture_triangle.png');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3>The Cultural Triangle</h3>
+                        <p>Ancient echoes & sun-drenched stone.</p>
+                        <a href="#culture" class="btn-link">Discover Heritage</a>
+                    </div>
+                </div>
+
+                <!-- 3. Safaris & Wildlife -->
+                <div class="category-card" data-category="wild">
+                    <div class="card-image" style="background-image: url('assets/cat_safari_wildlife.png');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3>Safaris & Wildlife</h3>
+                        <p>Primal gaze & untamed encounters.</p>
+                        <a href="#wildlife" class="btn-link">Start Your Safari</a>
+                    </div>
+                </div>
+
+                <!-- 4. Ayurveda & Wellness -->
+                <div class="category-card" data-category="wellness">
+                    <div class="card-image" style="background-image: url('assets/cat_wellness_ayurveda.png');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3>Ayurveda & Wellness</h3>
+                        <p>Heirloom rituals & inner stillness.</p>
+                        <a href="#wellness" class="btn-link">Rejuvenate</a>
+                    </div>
+                </div>
+
+                <!-- 5. Coastal Bliss & Surfing -->
+                <div class="category-card" data-category="azure">
+                    <div class="card-image" style="background-image: url('assets/cat_surfing.png');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3>Coastal Bliss & Surfing</h3>
+                        <p>Fluid horizons & salt-spun dreams.</p>
+                        <a href="#beaches" class="btn-link">Find Your Beach</a>
+                    </div>
+                </div>
+
+                <!-- 6. Adventure & Peaks -->
+                <div class="category-card" data-category="vertical">
+                    <div class="card-image" style="background-image: url('assets/cat_adams_peak_new.jpg');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3>Adventure & Peaks</h3>
+                        <p>Cloud-piercing summits & raw adrenaline.</p>
+                        <a href="#adventure" class="btn-link">Seek Adventure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Narrative Sections -->
+    
+    <!-- 1. Eco-Trails & Rainforests -->
+    <section class="section narrative" id="eco">
+        <div class="container grid-narrative">
+            <div class="narrative-content" data-gsap="reveal-left">
+                <h3 class="eyebrow">Tread Lightly, Breathe Deeply</h3>
+                <h2 class="section-title">NATURE UNPLUGGED,<br><span>SOULS RECONNECTED</span></h2>
+                <p class="body-large">Venture into the island’s wild lungs, from the emerald canopy of the <strong>Sinharaja Rainforest</strong> to the rugged cloud forests of the <strong>Knuckles Mountain Range</strong>.</p>
+                <p>Our eco-trails are designed for those who wish to connect with Sri Lanka's rare biodiversity—from the endemic birds of <strong>Kitulgala</strong> to the hidden waterfalls of <strong>Deniyaya</strong>. Experience the magic of sustainable glamping in the Central Highlands, where luxury meets conservation.</p>
+                <a href="#contact" class="btn btn-primary">Explore the Trails</a>
+            </div>
+            <div class="narrative-image" data-gsap="parallax">
+                <div class="image-wrapper" style="background-image: url('assets/narrative_eco.png');"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. The Cultural Triangle -->
+    <section class="section narrative alt" id="culture">
+        <div class="container grid-narrative">
+            <div class="narrative-image" data-gsap="parallax">
+                <div class="image-wrapper" style="background-image: url('assets/narrative_culture.png');"></div>
+            </div>
+            <div class="narrative-content" data-gsap="reveal-right">
+                <h3 class="eyebrow">Walk Through the Echoes of Kings</h3>
+                <h2 class="section-title">STEP INTO A LIVING MUSEUM,<br><span>ETCHED IN STONE</span></h2>
+                <p class="body-large">From the towering rock fortress of <strong>Sigiriya</strong> and the sprawling ruins of <strong>Anuradhapura</strong> to the medieval capital of <strong>Polonnaruwa</strong>, our journeys are time-traveling experiences.</p>
+                <p>Witness the vibrant pageantry of <strong>Kandy</strong>, wander the Dutch colonial streets of <strong>Galle Fort</strong>, and explore the cave temples of <strong>Dambulla</strong>. Feel the spiritual pulse of the island in its thousand-year-old temples.</p>
+                <a href="#contact" class="btn btn-primary">Discover the Heritage</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Safaris & Wildlife -->
+    <section class="section narrative" id="wildlife">
+        <div class="container grid-narrative">
+            <div class="narrative-content" data-gsap="reveal-left">
+                <h3 class="eyebrow">Where the Wild Things Are</h3>
+                <h2 class="section-title">THE GATHERING OF GIANTS &<br><span>THE SILENT HUNTER</span></h2>
+                <p class="body-large">Sri Lanka is a rare sanctuary where the wild reigns supreme. Our expert naturalists take you deep into the brush of <strong>Yala</strong> and <strong>Wilpattu</strong> to track the elusive leopard.</p>
+                <p>Witness <strong>"The Gathering"</strong> in Minneriya—the largest meeting of Asian elephants on Earth—or set sail from <strong>Mirissa</strong> or <strong>Trincomalee</strong> to encounter the majestic Blue Whale. Here, the rhythm of the wilderness becomes your own.</p>
+                <a href="#contact" class="btn btn-primary">Start Your Safari</a>
+            </div>
+            <div class="narrative-image" data-gsap="parallax">
+                <div class="image-wrapper" style="background-image: url('assets/narrative_safari.png');"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Ayurveda & Wellness -->
+    <section class="section narrative alt" id="wellness">
+        <div class="container grid-narrative">
+            <div class="narrative-image" data-gsap="parallax">
+                <div class="image-wrapper" style="background-image: url('assets/narrative_wellness.png');"></div>
+            </div>
+            <div class="narrative-content" data-gsap="reveal-right">
+                <h3 class="eyebrow">Find Your Center in the Emerald Hills</h3>
+                <h2 class="section-title">ANCIENT WISDOM FOR<br><span>THE MODERN SOUL</span></h2>
+                <p class="body-large">Leave the noise behind and wake to the symphony of nature. Our wellness packages focus on the 5,000-year-old science of <strong>Ayurveda</strong> in the serene settings of <strong>Hanthana</strong> and <strong>Nuwara Eliya</strong>.</p>
+                <p>Indulge in traditional herbal oil massages in <strong>Beruwala</strong>, sunrise yoga overlooking the mist-covered tea estates of <strong>Ella</strong>, and organic farm-to-table meals in the spiritual heart of <strong>Kandy</strong>. Reclaim your balance where the mountains meet the sky.</p>
+                <a href="#contact" class="btn btn-primary">Rejuvenate Your Soul</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Coastal Bliss & Surfing -->
+    <section class="section narrative" id="beaches">
+        <div class="container grid-narrative">
+            <div class="narrative-content" data-gsap="reveal-left">
+                <h3 class="eyebrow">Golden Sands & Endless Oceans</h3>
+                <h2 class="section-title">RHYTHMIC TIDES &<br><span>THE CALL OF THE HORIZON</span></h2>
+                <p class="body-large">Whether you seek the adrenaline of surfing the world-class breaks in <strong>Arugam Bay</strong> and <strong>Hikkaduwa</strong>, or the absolute stillness of a hidden cove in <strong>Tangalle</strong> and <strong>Hiriketiya</strong>.</p>
+                <p>Explore the turquoise waters of <strong>Nilaveli</strong>, snorkel the coral gardens of <strong>Pigeon Island</strong>, or watch the stilt fishermen of <strong>Weligama</strong> at sunset. Let the Indian Ocean reset your pace of life.</p>
+                <a href="#contact" class="btn btn-primary">Find Your Beach</a>
+            </div>
+            <div class="narrative-image" data-gsap="parallax">
+                <div class="image-wrapper" style="background-image: url('assets/narrative_coastal.png');"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Adventure & Peaks -->
+    <section class="section narrative alt" id="adventure">
+        <div class="container grid-narrative">
+            <div class="narrative-image" data-gsap="parallax">
+                <div class="image-wrapper" style="background-image: url('assets/narrative_adventure.png');"></div>
+            </div>
+            <div class="narrative-content" data-gsap="reveal-right">
+                <h3 class="eyebrow">Reach for the Clouds</h3>
+                <h2 class="section-title">CHALLENGE YOUR LIMITS,<br><span>REWARD YOUR SENSES</span></h2>
+                <p class="body-large">Designed for those who find peace in motion, our adventure tours span the island’s most dramatic landscapes. Scale the legendary heights of <strong>Adam’s Peak (Sri Pada)</strong> at dawn.</p>
+                <p>Trek the "World's End" cliffs at <strong>Horton Plains</strong>, raft the white waters of the <strong>Kelani River</strong>, zip-line through the mountains of <strong>Ella</strong>, or go canyoning in <strong>Belihuloya</strong>. Your adrenaline is our compass.</p>
+                <a href="#contact" class="btn btn-primary">Seek Adventure</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Testimonials (Deep Forest Slider) -->
+    <section class="section testimonials" id="reviews">
+        <div class="container testimonial-container">
+            <button class="slider-arrow prev">←</button>
+            <div class="testimonial-frame">
+                <div class="testimonial-slider-wrap">
+                    <div class="testimonial-slider-inner">
+                        <!-- Review 1 -->
+                        <div class="testimonial-slide">
+                            <div class="rating">★★★★★</div>
+                            <p class="review-text">"Standing atop Sigiriya at sunrise was breathtaking, but what made it special was our guide, Nishadh. His stories about the ancient sky palace made the ruins feel alive. A truly deep dive into Sri Lanka's heritage."</p>
+                            <p class="location">CENTRAL CULTURAL TRIANGLE</p>
+                            <p class="author">— SARAH & JAMES, UK —</p>
+                        </div>
+                        <!-- Review 2 -->
+                        <div class="testimonial-slide">
+                            <div class="rating">★★★★★</div>
+                            <p class="review-text">"We tracked a leopard for hours in Yala National Park. Our naturalist had an incredible eye for detail—he spotted things we never would have seen. High-end equipment and deep respect for the animals."</p>
+                            <p class="location">YALA NATIONAL PARK</p>
+                            <p class="author">— MICHAEL R., AUSTRALIA —</p>
+                        </div>
+                        <!-- Review 3 -->
+                        <div class="testimonial-slide">
+                            <div class="rating">★★★★★</div>
+                            <p class="review-text">"The train ride to Ella was beautiful, but the walk through the Pekoe Trail tea estates was the highlight. Our local host explained the 'leaf to cup' process with so much passion. Truly sustainable and heart-warming."</p>
+                            <p class="location">ELLA TEA COUNTRY</p>
+                            <p class="author">— ELENA & MARC, GERMANY —</p>
+                        </div>
+                        <!-- Review 4 -->
+                        <div class="testimonial-slide">
+                            <div class="rating">★★★★★</div>
+                            <p class="review-text">"From the stilt fishermen in Weligama to the ramparts of Galle Fort, our driver-guide Arjun was flawless. He knew all the quietest 'secret' beaches and the best local rice-and-curry spots."</p>
+                            <p class="location">SOUTHERN COAST</p>
+                            <p class="author">— PRIYA S., SINGAPORE —</p>
+                        </div>
+                        <!-- Review 5 -->
+                        <div class="testimonial-slide">
+                            <div class="rating">★★★★★</div>
+                            <p class="review-text">"A soul-stirring visit to the Temple of the Tooth in Kandy. Our guide was so respectful, helping us navigate the rituals and find a moment of peace amidst the chanting. It was the spiritual reset I needed."</p>
+                            <p class="location">KANDY SACRED CITY</p>
+                            <p class="author">— DAVID H., CANADA —</p>
+                        </div>
+                        <!-- Review 6 -->
+                        <div class="testimonial-slide">
+                            <div class="rating">★★★★★</div>
+                            <p class="review-text">"We ended our trip in Colombo, and the Lanka Bloom concierge team arranged a private dinner overlooking the ocean that was world-class. Seamless coordination from start to finish."</p>
+                            <p class="location">COLOMBO METROPOLIS</p>
+                            <p class="author">— SOPHIE L., FRANCE —</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-arrow next">→</button>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Get in Touch -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="grid-contact">
+                <div class="contact-info" data-gsap="reveal-left">
+                    <h3 class="eyebrow">Get in Touch</h3>
+                    <h2 class="section-title">Let’s Start <br><span>Your Story</span></h2>
+                    <p class="section-desc">Reach out to our island experts to begin your curated escape.</p>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">📞</div>
+                            <div class="detail-text">
+                                <h4>Phone Support</h4>
+                                <p><a href="tel:+94773434033">+94 77 343 4033</a></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">✉️</div>
+                            <div class="detail-text">
+                                <h4>Email Inquiry</h4>
+                                <p><a href="mailto:hello.lankabloom@gmail.com">hello.lankabloom@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">💬</div>
+                            <div class="detail-text">
+                                <h4>WhatsApp</h4>
+                                <p><a href="https://wa.me/94773434033" target="_blank">Chat with an Expert</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-gsap="reveal-right">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="journey">Desired Journey Type</label>
+                            <select id="journey" required>
+                                <option value="" disabled selected>Select your journey...</option>
+                                <option value="culture">Culture</option>
+                                <option value="wildlife">Wildlife</option>
+                                <option value="wellness">Wellness</option>
+                                <option value="beach">Beach</option>
+                                <option value="adventure">Adventure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="dates">Travel Dates</label>
+                            <input type="date" id="dates" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Tell us a bit about what you're looking for..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Begin Your Journey</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Premium Footer -->
+    <!-- Heritage Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <!-- Column 1: Brand Identity -->
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">
+                    <img src="assets/logo-white-full.png" alt="Lanka Bloom Logo">
+                </a>
+                <p class="tagline">Crafting intimate, sustainable expeditions across Sri Lanka’s most storied landscapes. Discover the island, naturally.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/lankabloom" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61584968917858" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@lanka.bloom7" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://youtube.com/@lankabloom?si=3NQZ7u3DH-9TDuLV" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <!-- Column 2: Explore -->
+            <div class="footer-links">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul>
+                    <li><a href="#story">Our Story</a></li>
+                    <li><a href="#journeys">Journeys</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Let's Plan Your Escape -->
+            <div class="footer-contact">
+                <h4 class="footer-heading">Connect</h4>
+                <div class="contact-item">
+                    <span>WhatsApp:</span> <a href="https://wa.me/94773434033">+94 77 343 4033</a>
+                </div>
+                <div class="contact-item phone-group">
+                    <span>Phone Support:</span> 
+                    <div class="numbers">
+                        <a href="tel:+94773434033">+94 77 343 4033</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span>Email:</span> <a href="mailto:hello.lankabloom@gmail.com">hello.lankabloom@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <div class="bottom-left">
+                    <p>&copy; 2026 Lanka Bloom. Bespoke Heritage Journeys.</p>
+                </div>
+                <div class="bottom-center">
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+                </div>
+                <div class="bottom-right">
+                    <p class="credits">Crafted with ❤️ in Sri Lanka<br><strong>Website by <a href="https://www.infinfy.com/" target="_blank">Infinfy Solutions</a></strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/94773434033" class="wa-btn" target="_blank">
+        <span class="wa-text">Chat with us</span>
+        <div class="wa-icon">WA</div>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
