@@ -2,8 +2,9 @@
 
 ## 🏁 Ground Truth
 - **Project Goal**: High-fidelity premium transformation with GSAP and asymmetrical layouts.
-- **Current Phase**: Phase 3 (Polish & Interactions).
-- **Staging URL**: TBD.
+- **Current Phase**: Deployed & Live.
+- **Live URL**: [https://lanka-bloom-website.netlify.app](https://lanka-bloom-website.netlify.app)
+- **GitHub Repo**: [Anu-creative/Lanka-Bloom-Website](https://github.com/Anu-creative/Lanka-Bloom-Website)
 
 ## 📊 Progress
 - [x] Premium Typography & Color Palette Established
@@ -21,10 +22,14 @@
 - [x] Social Media Integration: Instagram, Facebook, TikTok, YouTube
 - [x] Font Awesome Integration for Premium Icons
 - [x] Secondary Phone Number Removed (+94 77 48 10722)
+- [x] Initial GitHub & Netlify Deployment Complete
+- [x] Mobile Responsiveness Fix (Screens < 768px)
+- [x] Hamburger Menu Integration for Mobile Nav
 
 ## ⚡ Current Priorities
-1. Final visual review of the full-page scroll.
-2. Deploy to Netlify Staging.
+1. Final client review (Desktop + Mobile).
+2. Monitor deployment for any post-launch issues.
 
 ## 📋 Agency Log
-- **Design Agent:** 2026-04-25 — 21:55 — Secondary phone number removed from Contact and Footer. Social integration complete. Ready for staging.
+- **Design Agent:** 2026-04-26 — 10:30 — Mobile view fix complete. Responsive media queries added, hamburger menu implemented, and layout stacking verified at 375px.
+- **Design Agent:** 2026-04-25 — 23:10 — Site is LIVE at lanka-bloom-website.netlify.app. GitHub repository initialized and connected for CD.

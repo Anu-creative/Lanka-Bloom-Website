@@ -19,6 +19,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // Listen for scroll events
     window.addEventListener('scroll', handleScroll, { passive: true });
 
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const navCta = document.querySelector('.nav-cta');
+
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            navCta.classList.toggle('active');
+            // Prevent body scroll when menu is open
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+        });
+    }
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            navLinks.classList.remove('active');
+            navCta.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    });
+
     // Register GSAP ScrollTrigger
     gsap.registerPlugin(ScrollTrigger);
 
