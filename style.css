@@ -70,6 +70,10 @@ p {
     background: transparent; /* Initial transparent state */
 }
 
+.menu-toggle {
+    display: none; /* Hidden on Desktop/Tablet by default */
+}
+
 #main-nav.scrolled {
     background: rgba(253, 251, 247, 0.98);
     backdrop-filter: blur(15px);
@@ -145,6 +149,25 @@ p {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transition: var(--transition-smooth);
+    z-index: 10;
+}
+
+/* Medium/Small Desktop Spacing Refinement */
+@media (max-width: 1350px) and (min-width: 1025px) {
+    .nav-links {
+        gap: 20px;
+    }
+    .nav-container {
+        padding: 0 2rem;
+    }
+    .logo-wrapper {
+        width: 180px;
+    }
+    .btn-gold {
+        padding: 12px 25px;
+        min-width: 180px;
+    }
 }
 
 .nav-links a {
@@ -1372,9 +1395,9 @@ p {
 }
 
 /* ==========================================================================
-   Mobile Responsive Overrides (< 768px)
+   Mobile & Tablet Responsive Overrides (< 1025px)
    ========================================================================== */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     /* Global Overrides */
     :root {
         --container-width: 100%;
@@ -1435,8 +1458,8 @@ p {
     .menu-toggle.active .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .menu-toggle.active .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-    .nav-links {
-        position: fixed;
+    #main-nav .nav-links {
+        position: fixed !important;
         top: 0;
         right: -100%;
         width: 100%;
@@ -1449,11 +1472,11 @@ p {
         gap: 2.5rem;
         transition: 0.5s ease-in-out;
         z-index: 1000;
-        left: auto;
-        transform: none;
+        left: auto !important;
+        transform: none !important;
     }
 
-    .nav-links.active {
+    #main-nav .nav-links.active {
         right: 0;
     }
 
@@ -1470,10 +1493,13 @@ p {
     .nav-links.active + .nav-cta {
         display: block !important;
         position: fixed;
-        bottom: 10%;
+        bottom: 8%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1001;
+        width: 80%; /* Substantial but not edge-to-edge */
+        max-width: 300px;
+        text-align: center;
     }
 
     /* Hero Section */
